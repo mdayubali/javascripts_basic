@@ -7,11 +7,11 @@ const products = [
 function totalPrice(totalProduct){
     let sum = 0;
     for(let i = 0; i<products.length; i++){
-        const product = products[i];
-        const  totalCost = product.price * product.quantity
-        sum = sum + totalCost 
+        const product   = products[i];
+        const totalCost = product.price * product.quantity
+              sum       = sum + totalCost
     }
     return sum;
 }
 const expense = totalPrice(products)
-console.log(expense)
+console.log('total expense', expense)
